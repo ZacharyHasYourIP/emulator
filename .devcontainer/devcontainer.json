@@ -4,13 +4,11 @@
     "dockerfile": "Dockerfile"
   },
   "features": {
-    // Adds a VNC-based desktop environment accessible via browser or VNC client
     "ghcr.io/devcontainers/features/desktop-vnc:1": {
       "version": "latest",
       "username": "vscode"
     }
   },
-  // Forwards the VNC web interface port so you can connect
   "forwardPorts":,
   "portsAttributes": {
     "6080": {

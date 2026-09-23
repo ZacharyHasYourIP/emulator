@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Web Emulator</title>
+</head>
+<body>
+    <div style="width:640px;height:480px;max-width:100%">
+        <div id="game"></div>
+    </div>
+
+    <script>
+        EJS_player = '#game';
+        EJS_gameUrl = 'path-to-your-game-rom.gba'; // Change to your ROM path
+        EJS_core = 'gba'; // Change to your console type (e.g., nes, snes, gba)
+        EJS_pathtodata = 'https://emulatorjs.org';
+    </script>
+    <script src="https://emulatorjs.orgloader.js"></script>
+</body>
+</html>

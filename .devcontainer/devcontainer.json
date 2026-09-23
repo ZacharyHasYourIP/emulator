@@ -4,11 +4,13 @@
     "dockerfile": "Dockerfile"
   },
   "features": {
+    
     "ghcr.io/devcontainers/features/desktop-vnc:1": {
       "version": "latest",
       "username": "vscode"
     }
   },
+  
   "forwardPorts":,
   "portsAttributes": {
     "6080": {

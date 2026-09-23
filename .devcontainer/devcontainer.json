@@ -1,17 +1,22 @@
 {
-  "name": "Cloud Browser",
-  "image": "://microsoft.com",
+  "name": "Ubuntu with VNC and Chrome",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
   "features": {
-    "ghcr.io/devcontainers/features/desktop-lite:1": {
-      "version": "latest"
+    // Adds a VNC-based desktop environment accessible via browser or VNC client
+    "ghcr.io/devcontainers/features/desktop-vnc:1": {
+      "version": "latest",
+      "username": "vscode"
     }
   },
+  // Forwards the VNC web interface port so you can connect
   "forwardPorts":,
   "portsAttributes": {
     "6080": {
-      "label": "Browser Desktop",
+      "label": "VNC Desktop",
       "onAutoForward": "openPreview"
     }
   },
-  "postCreateCommand": "sudo apt-get update && sudo apt-get install -y google-chrome-stable"
+  "remoteUser": "vscode"
 }
